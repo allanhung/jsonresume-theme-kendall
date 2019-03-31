@@ -199,6 +199,25 @@ function render(resumeObject) {
         }
     }
 
+    if (resumeObject.certifications && resumeObject.certifications.length) {
+        if (resumeObject.certifications[0].name) {
+            resumeObject.certificationsBool = true;
+            _.each(resumeObject.certificationss, function(c){
+                if (c.startDate) {
+                    c.startDateYear = (c.startDate || "").substr(0,4);
+                    c.startDateMonth = getMonth(c.startDate || "");
+
+                }
+                if(c.endDate) {
+                    c.endDateYear = (c.endDate || "").substr(0,4);
+                    c.endDateMonth = getMonth(c.endDate || "");
+                } else {
+                    c.endDateYear = 'Present'
+                }
+            });
+        }
+    }
+
     if (resumeObject.publications && resumeObject.publications.length) {
         if (resumeObject.publications[0].name) {
             resumeObject.publicationsBool = true;
