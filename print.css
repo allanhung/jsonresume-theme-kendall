@@ -18,6 +18,7 @@ a[href]:after {
 blockquote,
 #education,
 #awards,
+#certifications,
 .contact-item,
 .publication,
 .skills,
@@ -46,11 +47,13 @@ blockquote,
   margin-bottom: -20px;
 }
 #awards:before,
+#certifications:before,
 #education:before {
   background: none;
 }
 
 #awards .description,
+#certifications .description,
 #education .description,
 .job .details {
   border: 1px solid #eee;

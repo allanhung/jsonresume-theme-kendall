@@ -99,14 +99,13 @@
           {{#certificationsBool}}
           <!-- CERTIFICATIONS -->
           <div class="box">
-            <h2><i class="fa fa-certificate ico"></i> Awards</h2>
-            <ul id="awards" class="clearfix">
+            <h2><i class="fa fa-drivers-license ico"></i> Certifications</h2>
+            <ul id="certifications" class="clearfix">
               {{#certifications}}
               <li>
-                <div class="year pull-left">{{startDateMonth}} {{startDateYear}}</div>
+                <div class="startDateYear pull-left">{{startDateMonth}} {{startDateYear}}</div>
                 <div class="description pull-right">
-                  <p><i class="fa fa-trophy ico"></i>{{name}}</p>
-                  <p><img src="{{url}}" alt="avatar"></p>
+                  <p><i class="fa fa-drivers-license-o ico"></i> {{name}}</p>
                 </div>
               </li>
               {{/certifications}}
