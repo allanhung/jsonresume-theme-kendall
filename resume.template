@@ -96,6 +96,23 @@
             </ul>
           </div>
           {{/awardsBool}}
+          {{#certificationsBool}}
+          <!-- CERTIFICATIONS -->
+          <div class="box">
+            <h2><i class="fa fa-certificate ico"></i> Awards</h2>
+            <ul id="awards" class="clearfix">
+              {{#certifications}}
+              <li>
+                <div class="year pull-left">{{startDateMonth}} {{startDateYear}}</div>
+                <div class="description pull-right">
+                  <p><i class="fa fa-trophy ico"></i>{{name}}</p>
+                  <p><img src="{{url}}" alt="avatar"></p>
+                </div>
+              </li>
+              {{/certifications}}
+            </ul>
+          </div>
+          {{/certificationsBool}}
           {{#volunteerBool}}
           <!-- VOLUNTEER -->
           <div class="box">
